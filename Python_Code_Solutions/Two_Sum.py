@@ -16,17 +16,27 @@ By: Anand S Kothari
 #  The easy solution is O(n^2) run-time complexity.
 class Solution(object):
 
-    def twoSum(self, nums, target ):
-        length_of_nums = len(nums)
-        for i in range(length_of_nums):
-            for j in range(i+1, length_of_nums):
-                if (nums[i] + nums[j] == target):
-                    return [i,j]
+    # def twoSum(self, nums, target ):
+    #     length_of_nums = len(nums)
+    #     for i in range(length_of_nums):
+    #         for j in range(i+1, length_of_nums):
+    #             if (nums[i] + nums[j] == target):
+    #                 return [i,j]
+    #
 
 
+    def twoSum(self, nums, target):
+        # hash 2
+        hash_nums = {}
+        for index, num in enumerate(nums):
+            another = target - num
+            try:
+                hash_nums[another]
+                return [hash_nums[another], index]
+            except KeyError:
+                hash_nums[num] = index
 
-
+#
 if __name__ == '__main__':
-    # begin
     s = Solution()
     print (s.twoSum([3, 7, 5, 2, 4], 9))
