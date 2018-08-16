@@ -24,7 +24,6 @@ class Solution(object):
     #                 return [i,j]
     #
 
-
     def twoSum(self, nums, target):
         # hash 2
         hash_nums = {}
@@ -36,7 +35,7 @@ class Solution(object):
             except KeyError:
                 hash_nums[num] = index
 
-#
+
 if __name__ == '__main__':
     s = Solution()
     print (s.twoSum([3, 7, 5, 2, 4], 9))
