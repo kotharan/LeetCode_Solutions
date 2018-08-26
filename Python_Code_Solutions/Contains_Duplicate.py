@@ -22,7 +22,7 @@ class Solution(object):
         :rtype: bool
         """
 
-        return (len(nums) != len(set(nums)))
+        return (len(nums) != len(set(nums)))  # Set function removes the duplicates and then len function is used to check if the length of nums is name also after removing the duplicates
 
 if __name__ == '__main__':
     s=Solution()
