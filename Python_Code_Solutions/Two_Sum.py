@@ -16,12 +16,12 @@ By: Anand S Kothari
 #  The easy solution is O(n^2) run-time complexity.
 class Solution(object):
 
-    # def twoSum(self, nums, target ):    #Degining the twoSum function
-    #     length_of_nums = len(nums)
-    #     for i in range(length_of_nums):
-    #         for j in range(i+1, length_of_nums):
-    #             if (nums[i] + nums[j] == target):
-    #                 return [i,j]
+    # def twoSum(self, nums, target ):      #Degining the twoSum function
+    #     length_of_nums = len(nums)        # Storing len of the input array
+    #     for i in range(length_of_nums):   # Storing range of the length which starts from 0
+    #         for j in range(i+1, length_of_nums): #Storing range from the i+1 position
+    #             if (nums[i] + nums[j] == target): #Condition
+    #                 return [i,j]                  # Return Statement  
     #
 
     def twoSum(self, nums, target):
