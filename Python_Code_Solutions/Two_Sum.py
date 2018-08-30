@@ -16,7 +16,7 @@ By: Anand S Kothari
 #  The easy solution is O(n^2) run-time complexity.
 class Solution(object):
 
-    # def twoSum(self, nums, target ):
+    # def twoSum(self, nums, target ):    #Degining the twoSum function
     #     length_of_nums = len(nums)
     #     for i in range(length_of_nums):
     #         for j in range(i+1, length_of_nums):
