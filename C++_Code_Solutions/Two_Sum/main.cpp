@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+// Still working on the code
 
 class Solution {
 public:
@@ -26,5 +27,6 @@ public:
 void main()
 {
     Solution s1;
-    s1.twoSum([2,2,3,4],4);
+    arr[3]={1,2,2}
+    s1.twoSum(arr,4);
 }
