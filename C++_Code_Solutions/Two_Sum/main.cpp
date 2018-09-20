@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+
 using namespace std;
 // Still working on the code
 
@@ -24,9 +25,9 @@ public:
     }
 };
 
-void main()
+int main()
 {
     Solution s1;
-    arr[3]={1,2,2}
-    s1.twoSum(arr,4);
+    cout<<"Hello";
+    s1.twoSum()
 }
