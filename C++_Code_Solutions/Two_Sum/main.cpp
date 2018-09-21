@@ -14,10 +14,10 @@ public:
 
         for(int j=0 ; j<sizeof(nums);j++)
         {
-            if(nums[j]==new_targ && j!=i)
+            if(nums[j]==new_targ && j!=i && j < sizeof(nums) && i < j)
             {
                 cout<<"["<<i<<","<<j<<"]";
-                break;
+
             }
 
             }
@@ -32,6 +32,6 @@ public:
  int main()
  {
      Solution s;
-     int arr[] = {1,2,4,3};
-     s.twoSum(arr,6);
+     int arr[] = {2,7,11,15};
+     s.twoSum(arr,9);
  }
