@@ -2,32 +2,36 @@
 #include <vector>
 
 using namespace std;
-// Still working on the code
 
 class Solution {
 public:
-    vector<int> twoSum(vector<int> &numbers, int target) {
-        unordered_map<int, int> m;
-        vector<int> result;
-        for(int i=0; i<numbers.size(); i++){
-            // not found the second one
-            if (m.find(numbers[i])==m.end() ) {
-                // store the first one poisition into the second one's key
-                m[target - numbers[i]] = i;
-            }else {
-                // found the second one
-                result.push_back(m[numbers[i]]+1);
-                result.push_back(i+1);
+    int twoSum(int nums[], int target) {
+
+    for(int i=0;i<sizeof(nums);i++)
+    {
+        int number = nums[i];
+        int new_targ = target - number;
+
+        for(int j=0 ; j<sizeof(nums);j++)
+        {
+            if(nums[j]==new_targ && j!=i)
+            {
+                cout<<"["<<i<<","<<j<<"]";
                 break;
             }
-        }
-        return result;
+
+            }
+            }
+
+
+
     }
 };
 
-int main()
-{
-    Solution s1;
-    cout<<"Hello";
-    s1.twoSum()
-}
+
+ int main()
+ {
+     Solution s;
+     int arr[] = {1,2,4,3};
+     s.twoSum(arr,6);
+ }
