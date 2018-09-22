@@ -54,7 +54,7 @@ public:
 
         for(int j=0 ; j<sizeof(nums);j++)
         {
-            if(nums[j]==new_targ && j!=i && j < sizeof(nums) && i < j)
+            if(nums[j]==new_targ && j!=i && i < j)
             {
 
                 results[0].push_back(i);
