@@ -1,0 +1,5 @@
+C:\Users\DELL\Documents\GitHub\LeetCode_Solutions\C++_Code_Solutions\Two_Sum\main.cpp: In function 'int main()':
+C:\Users\DELL\Documents\GitHub\LeetCode_Solutions\C++_Code_Solutions\Two_Sum\main.cpp:78:33: error: in C++98 'arr' must be initialized by constructor, not by '{...}'
+     vector<int> arr = {2,7,11,15};
+                                 ^
+C:\Users\DELL\Documents\GitHub\LeetCode_Solutions\C++_Code_Solutions\Two_Sum\main.cpp:78:33: error: could not convert '{2, 7, 11, 15}' from '<brace-enclosed initializer list>' to 'std::vector<int>'

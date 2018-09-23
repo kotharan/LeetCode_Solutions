@@ -1,9 +1,10 @@
 #include <iostream>
 #include <vector>
-#include<bits/stdc++.h>
+#include <unordered_map>
 using namespace std;
 size_t size=10;
- vector<int> result;
+vector<int> result;
+
 /* CODE TO GET VALUES WITHOUT THE USE OF VECTOR
 
 class Solution {
@@ -46,29 +47,23 @@ public:
 class Solution {
 public:
 
-    vector<int> twoSum(vector<int> &nums, int target) {
-
-    for(int i=0;i<nums.size();i++)
-    {
-        int number = nums[i];
-        int new_targ = target - number;
-
-        for(int j=0 ; j<nums.size();j++)
-        {
-            if(nums[j]==new_targ && j!=i && i < j)
-            {
-
+   vector<int> twoSum(vector<int> &numbers, int target) {
+        unordered_map<int, int> m;
+        vector<int> result;
+        for(int i=0; i<numbers.size(); i++){
+            // not found the second one
+            if (m.find(numbers[i])==m.end() ) {  // m.find(key)==m.end()  // This says if key is not there in the vector array
+                // store the first one position into the second one's key
+                m[target - numbers[i]] = i;  // m[key] = value
+            }else {
+                // found the second one
+                result.push_back(m[numbers[i]]);
                 result.push_back(i);
-                result.push_back(j);
-
-
+                break;
             }
-
         }
-    }  return result;
-
-
-}
+        return result;
+    }
 };
 
  int main()
@@ -80,6 +75,7 @@ public:
     {
         cout<< result[value];
     }
+
     return 0;
 
  }
