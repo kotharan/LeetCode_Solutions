@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
-
+#include<bits/stdc++.h>
 using namespace std;
-
-
+size_t size=10;
+ vector<int> result;
 /* CODE TO GET VALUES WITHOUT THE USE OF VECTOR
 
 class Solution {
@@ -45,39 +45,41 @@ public:
 
 class Solution {
 public:
-    vector<int> twoSum(int nums[], int target) {
-    vector<int> results[10];
-    for(int i=0;i<sizeof(nums);i++)
+
+    vector<int> twoSum(vector<int> &nums, int target) {
+
+    for(int i=0;i<nums.size();i++)
     {
         int number = nums[i];
         int new_targ = target - number;
 
-        for(int j=0 ; j<sizeof(nums);j++)
+        for(int j=0 ; j<nums.size();j++)
         {
             if(nums[j]==new_targ && j!=i && i < j)
             {
 
-                results[0].push_back(i);
-                results[1].push_back(j);
+                result.push_back(i);
+                result.push_back(j);
 
-                return results[0,1];
+
             }
 
         }
-    }
+    }  return result;
+
 
 }
 };
 
-
  int main()
  {
      Solution s;
-     int arr[] = {2,7,11,15};
-     vector<int> result = s.twoSum(arr,9);
-    for(int value = 0 ; value <= result.size(); value++)
+    vector<int> arr = {2,7,11,15};
+    result = s.twoSum(arr,9);
+    for(int value = 0 ; value < result.size(); value++)
     {
         cout<< result[value];
     }
+    return 0;
 
  }
