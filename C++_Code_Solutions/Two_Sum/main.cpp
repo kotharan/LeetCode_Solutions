@@ -2,7 +2,6 @@
 #include <vector>
 #include <unordered_map>
 using namespace std;
-size_t size=10;
 vector<int> result;
 
 /* CODE TO GET VALUES WITHOUT THE USE OF VECTOR
@@ -41,24 +40,22 @@ public:
 
 
 
-
-
+// CODE WITH VECTOR MORE EFFICEINT WITH A AVERAGE RUNNING TIME OF O(1)
 
 class Solution {
 public:
-
    vector<int> twoSum(vector<int> &numbers, int target) {
-        unordered_map<int, int> m;
+        unordered_map<int, int> comp;  // The syntax is kinda like this unordered_map<key,value> variable_name;
         vector<int> result;
         for(int i=0; i<numbers.size(); i++){
-            // not found the second one
-            if (m.find(numbers[i])==m.end() ) {  // m.find(key)==m.end()  // This says if key is not there in the vector array
+            if (comp.find(numbers[i])==comp.end() ) {  // m.find(key)==m.end() , This says if key is not there in the unordered_map array
+
                 // store the first one position into the second one's key
-                m[target - numbers[i]] = i;  // m[key] = value
+                comp[target - numbers[i]] = i;  // m[key] = value , comp stores the compliments of the given array. ex: m[7] = 0
             }else {
                 // found the second one
-                result.push_back(m[numbers[i]]);
-                result.push_back(i);
+                result.push_back(comp[numbers[i]]);  // Pushes the values of the complement array keys to result vector
+                result.push_back(i);                  // Pushes the current index number to result vector
                 break;
             }
         }
@@ -71,11 +68,9 @@ public:
      Solution s;
     vector<int> arr = {2,7,11,15};
     result = s.twoSum(arr,9);
-    for(int value = 0 ; value < result.size(); value++)
+    for(int value:result)  // Advanced for loop read as "For each value in result do this"
     {
         cout<< result[value];
     }
-
     return 0;
-
  }
