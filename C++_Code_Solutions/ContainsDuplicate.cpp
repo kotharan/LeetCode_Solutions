@@ -49,7 +49,7 @@ public:
 //        }
 //
 //    }
-//    if(!helperCalled)
+//    if(!helperCalled)  // Will check if the boolean condition is false(which means helper function is not called even once)
 //    {
 //    cout<<"No Duplicate found";
 //    return false;
