@@ -97,8 +97,8 @@ int main()
     cout<<endl;
 
     cout<<"After deleting the node the list is :: ";
-    delNode(&head,6);
-    delOne(head->next);
+    delNode(&head,6); // Deletes the node with data 6
+    delOne(head->next); // Deletes the node after the first(head) node
      printList(head);
 
 
