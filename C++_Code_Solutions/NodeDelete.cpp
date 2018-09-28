@@ -5,13 +5,13 @@ using namespace std;
 struct Node
 {
     int data;
-    struct Node *next;
+    Node* next;
 };
 
-void push(struct Node** head_ref, int new_data)  // O(1) :: Time complexity
+void push( Node** head_ref, int new_data)  // O(1) :: Time complexity
 {
     //allocate a new_node
-    Node* new_node =(struct Node*)malloc(sizeof(struct Node));
+    Node* new_node =(Node*)malloc(sizeof( Node));
     // Assign Data
     new_node->data = new_data;
     // Point to current head data
@@ -23,9 +23,9 @@ void push(struct Node** head_ref, int new_data)  // O(1) :: Time complexity
 
 // This function finds for the key which needs to
 // be deleted and return nothing if it doesn't have the key
-void delNode( struct Node** head_ref , int key)
+void delNode( Node** head_ref , int key)
 {
-    struct Node* temp = *head_ref , *prev;
+     Node* temp = *head_ref , *prev;
     if(temp != NULL && temp->data == key)
     {
         *head_ref = temp->next;
@@ -44,27 +44,46 @@ void delNode( struct Node** head_ref , int key)
     }
 
     // If key not found
-    if(temp == NULL) return;
+    if(temp == NULL)
+    {
+        cout<<" Couldn't find the given node current list is :: " <<endl;
+        return;
+    }
 
     // Remove the deletion key and point to its next node
     prev->next = temp->next;
     free(temp);  // Free memory after deletion
 
-
 }
 
+// This function is to print the updated linked
+// list and return the list if no key is found
+
+void printList(Node* node)  // Pass the head if entire list needs to be printed
+{
+    while(node != NULL)
+    {
+        cout<<node->data<<" ";
+        node = node->next;
+    }
+}
 
 
 int main()
 {
-    struct Node* head = NULL;
-    push(&head,6);
+     Node* head = NULL;
+    push(&head,6);  // Inserts value to the start of the list
     push(&head,5);
-    cout<<head->data;
+    push(&head,8);
+    push(&head,9);
 
+    cout<<"List is :: " ;
+    printList(head);
+    cout<<endl;
 
-
-    cout<<"Hello";
+    cout<<"After deleting the node the list is :: ";
+    delNode(&head,8);
+     printList(head);
     return 0;
 }
 
