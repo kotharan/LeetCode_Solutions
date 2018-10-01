@@ -19,3 +19,4 @@ Solutions of LeetCode [interview](http://www.learn4master.com/interview-question
 | 1 | [How to create Linked list nodes](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/CreatLinkedListNodes.cpp) | Creating three nodes and printing them |
 | 2 | [How to delete Linked list nodes with the key](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/NodeDelete.cpp) | With O(n) and O(1) runtime functions |
 | 3 |[Bubble Sort with Recursion ](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/BuubleSort.cpp) | With O(n) |
+| 4 |[Merge Sort with Recursion](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/MergeSort.cpp) | O(n log n) |
