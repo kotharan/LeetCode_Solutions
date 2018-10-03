@@ -77,6 +77,6 @@ int main(){
         cout<<arr[i];
     }
 
-    cout<<size;
+    
     return 0;
 }
