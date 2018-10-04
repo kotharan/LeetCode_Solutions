@@ -26,9 +26,11 @@ void display(stack<int> ab)
      st.push(7);
 
      display(st);
+     cout<<endl<< "Size before::" <<st.size();
      cout<<endl;
     st.pop();
      display(st);
-
+    cout<<endl<< "Size after pop::" <<st.size();
      return 0;
+     
 }
