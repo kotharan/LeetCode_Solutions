@@ -15,10 +15,10 @@ Solutions of LeetCode [interview](http://www.learn4master.com/interview-question
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string/description/) | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/Reverse%20String.cpp) | Easy | Not Appeared yet |
 | 724 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/description/) | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/Find%20Pivot%20Index.cpp) [Python](https://github.com/kotharan/LeetCode_Solutions/blob/master/Python_Code_Solutions/Find%20Pivot%20Index.py) | Easy | Not Appeared yet |
 
-| # | Important codes you should know | Description |
-|---|:---------:| :---------:|
-| 1 | [How to create Linked list nodes](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/CreatLinkedListNodes.cpp) | Creating three nodes and printing them |
-| 2 | [How to delete Linked list nodes with the key](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/NodeDelete.cpp) | With O(n) and O(1) runtime functions |
-| 3 |[Bubble Sort with Recursion ](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/BuubleSort.cpp) | With O(n) |
-| 4 |[Merge Sort with Recursion](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/MergeSort.cpp) | O(n log n) |
-| 5 |[Stack Basics](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/LearningStack.cpp) | Learn about LIFO |
+| # | Important codes you should know | Solution | Description |
+|---|:---------:| :---------:| :---------:|
+| 1 |  How to create Linked list nodes | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/CreatLinkedListNodes.cpp) | Creating three nodes and printing them |
+| 2 |  How to delete Linked list nodes with the key | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/NodeDelete.cpp) | With O(n) and O(1) runtime functions |
+| 3 | Bubble Sort with Recursion  | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/BuubleSort.cpp) | With O(n) |
+| 4 | Merge Sort with Recursion | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/MergeSort.cpp) | O(n log n) |
+| 5 | Stack Basics | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/LearningStack.cpp) | Learn about LIFO |
