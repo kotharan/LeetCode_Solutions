@@ -17,8 +17,9 @@ Solutions of LeetCode [interview](http://www.learn4master.com/interview-question
 
 | # | Important codes you should know | Solution | Description |
 |---|:---------:| :---------:| :---------:|
-| 1 |  How to create Linked list nodes | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/CreatLinkedListNodes.cpp) [Python](https://github.com/kotharan/LeetCode_Solutions/blob/master/Python_Code_Solutions/Create_LL_Nodes.py) | Creating three nodes and printing them |
-| 2 |  How to delete Linked list nodes with the key | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/NodeDelete.cpp) | With O(n) and O(1) runtime functions |
-| 3 | Bubble Sort with Recursion  | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/BuubleSort.cpp) | With O(n) |
-| 4 | Merge Sort with Recursion | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/MergeSort.cpp) | O(n log n) |
-| 5 | Stack Basics | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/LearningStack.cpp) | Learn about LIFO |
+| 1 |  How to create Linked list nodes | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/CreatLinkedListNodes.cpp)<br> [Python](https://github.com/kotharan/LeetCode_Solutions/blob/master/Python_Code_Solutions/Create_LL_Nodes.py) | Creating three nodes and printing them |
+| 2 | Add a Node at the start | [Python](https://github.com/kotharan/LeetCode_Solutions/blob/master/Python_Code_Solutions/AddingNodeToStart.py) | Creating nodes and adding node at the start |
+| 3 |  How to delete Linked list nodes with the key | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/NodeDelete.cpp) | With O(n) and O(1) runtime functions |
+| 4 | Bubble Sort with Recursion  | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/BuubleSort.cpp) | With O(n) |
+| 5 | Merge Sort with Recursion | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/MergeSort.cpp) | O(n log n) |
+| 6 | Stack Basics | [C++](https://github.com/kotharan/LeetCode_Solutions/blob/master/C%2B%2B_Code_Solutions/LearningStack.cpp) | Learn about LIFO |
