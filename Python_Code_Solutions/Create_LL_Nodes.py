@@ -24,7 +24,7 @@ d2.nextval = d3
 # We have created the nodes now and also created pointers
 
 # Lets TRAVERSE
-# Consider "thisvalue" as the head pointer [This is where the linked list start], it will be used to traverse the node elements
+# Consider "thisvalue" as the head pointer [Start of the list of nodes, concept of linked lists], it will be used to traverse the node elements
 thisvalue = d1
 
 while thisvalue:
